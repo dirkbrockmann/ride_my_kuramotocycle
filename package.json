@@ -1,14 +1,14 @@
 {
-  "name": "@explorables/explorable_template",
-  "title": "Explorable Title",
-  "subtitle": "Explorable Subtitle",
-  "description": "This is a template for making a complexity explorable. The template can be used to create a new complexity explorable. This template implements the Vicsek Model.",
+  "name": "@explorables/ride_my_kuramotocycle",
+  "title": "Ride my Kuramotocycle!",
+  "subtitle": "Synchronization of Phase-Coupled Oscillators - The Kuramoto Model",
+  "description": "This explorable illustrates the Kuramoto model for phase coupled oscillators. This model is used to describe synchronization phenomena in natural systems, e.g. the flash synchronization of fire flies or wall-mounted clocks.",
   "author": "Dirk Brockmann (https://synosy.github.io)",
   "version": "2.0.0",
   "license": "CC-BY-4.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dirkbrockmann/explorable_template.git"
+    "url": "git+https://github.com/dirkbrockmann/ride_my_kuramotocycle.git"
   },
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",

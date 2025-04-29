@@ -5,29 +5,50 @@
 // - switches (connected to toggles) property default
 // utils.js provides methods for extracting various types of parameters for later use
 
+
 export default {
-		dt:1,
-		L:100,
-		agentsize: 1.0,
-	
-		speed: {
-			range:[0,1],
-			default:0.2
+		dt:0.01,
+		L:1,
+		agentsize: [6,3],
+		omega_0: 1.0,
+		omega_var:0.2,
+		r_var:0.2,
+		orderparametersize:6,
+		orderparameterlength:0.5,
+		
+		angular_speed: {
+			range:[1,4],
+		default:3
 		},
-		wiggle: {
-			range:[0,180],
-			default:50
+		coupling_strength: {
+			range:[0,2],
+			default:0
 		},
-		interaction_radius:{
-			range : [0,5],
-			default : 3
+		number_of_oscillators:{
+			range : [1,200],
+			default : 100
 		},
-		number_of_particles : {
-			choices:[50,100,200,400],
-		default:2
+		angular_speed_variability:{
+			range : [0,1],
+			default : 0.672
 		},
-		color_by_heading: {
-			default: true
+		initial_conditions : {
+			choices:["random init. cond.","identical init. cond."],
+		default:0
+		},
+		show_order_parameter: {
+		default: true
+		},
+		comoving_reference_frame: {
+		default: false
+		},
+		comoving_reference_frame: {
+			default: false
+		},
+		orlis_magic_switch:{
+			default: false,
+			label:"Orli's Magic Switch"
 		}
+		
 }
 

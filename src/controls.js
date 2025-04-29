@@ -44,9 +44,10 @@ const sliders = map(va,
 		
 const toggles = map(bo, 
 		v => widgets.toggle()
-					.id(v.id).
-					label(v.label).
-					value(v.default)					
+					.id(v.id)
+					.label(v.label)
+					.value(v.default)
+					.labelposition(cfg.widgets.toggle_label_pos)
 		);
 
 // making the radio widgets objects, based on the choices
@@ -56,7 +57,6 @@ const radios = map(ch,
 					.choices(v.choices)
 					.id(v.id)
 					.value(v.default)
-					.orientation(cfg.widgets.radio_orientation)
 					.labelposition(cfg.widgets.radio_label_position)
 		);
 
@@ -95,14 +95,15 @@ export default (controls,grid)=>{
 	const sl_pos=grid.position(cfg.widgets.slider_anchor.x,range(sliders.length)
 			.map(x=>(cfg.widgets.slider_anchor.y+cfg.widgets.slider_gap*x)));
 	
-	const tg_pos=grid.position(cfg.widgets.toggle_anchor.x,cfg.widgets.toggle_anchor.y);	
+	const tg_pos=grid.position(cfg.widgets.toggle_anchor.x,range(toggles.length)
+			.map(x=>(cfg.widgets.toggle_anchor.y+cfg.widgets.toggle_gap*x)));
+	
 
 	const ra_pos=grid.position(cfg.widgets.radio_anchor.x,cfg.widgets.radio_anchor.y);		
 	
 	sliders.forEach((sl,i) => sl.position(sl_pos[i]));
+	toggles.forEach((tg,i) => tg.position(tg_pos[i]));
 	
-
-	toggles[0].position(tg_pos).labelposition(cfg.widgets.toggle_label_pos)
 
 	radios[0].position(ra_pos)
 		.size(cfg.widgets.radio_size).shape(cfg.widgets.radio_shape)

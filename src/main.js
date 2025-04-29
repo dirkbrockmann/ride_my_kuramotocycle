@@ -19,8 +19,8 @@ function load(containerId, config = defaultConfig) {
 
   // Initialize everything
   setup_controls(controls, grid);
-  setup_interactions(display, controls, config);
-  setup_simulation(display, config);
+  setup_interactions(display, controls,grid, config);
+  setup_simulation(display, controls,grid,config);
 
   // Return a clean instance API
   return {
