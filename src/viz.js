@@ -120,18 +120,10 @@ const go = (display,config) => {
 	
 	
 	
-	
 	display.selectAll("#origin").attr("transform","rotate("+thetaref+")")	
-	// display.selectAll("."+styles.node)
-	// 	.attr("cx",d=>X(d.x))
-	// 	.attr("cy",d=>Y(d.y))
-	// 	.style("fill", d => param.color_by_heading.widget.value() ? d3.interpolateSinebow(d.theta/2/Math.PI)  : "black")
-	//
+	
 }
 
-// the update function is usually not required for running the explorable. Sometimes
-// it makes sense to have it, e.g. to update the visualization, if a parameter is changed,
-// e.g. a radio button is pressed, when the system is not running, e.g. when it is paused.
 
 const update = (display,config) => {
 	
