@@ -11,6 +11,14 @@
 .plot {
 	
 }
+
+.xaxis {
+	
+}
+.yaxis{
+
+}
+
 .xlabel {
 	text-anchor:middle;	
 }
@@ -48,3 +56,33 @@
 	stroke: grey;
 
 }
+
+@media (prefers-color-scheme: dark) {
+ .caxis {
+	stroke:white;
+	}
+	.plot {
+	color:white	
+}
+	.xlabel {
+		fill:white	
+	}
+	.ylabel{
+		fill:white	
+	}
+.plotline {
+	stroke: red;
+	
+}
+.op {
+	stroke: red;
+	stroke-width:1px;
+	fill:none;
+}
+.dot {
+	stroke: grey;
+	stroke-width:0.5px;
+	fill:red;
+}
+}
+
