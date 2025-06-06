@@ -26,7 +26,7 @@ export default (container_id,config)=>{
 
 	const controls = container.append("div")
 		.attr("id","controls")
-		.attr("class","control-panel")
+		.attr("class","d3-widgets control-panel")
 		.classed(config.controls_class,true)
 		.classed(config.debug_lattice,config.debug)
 		.append("svg")
