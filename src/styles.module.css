@@ -86,3 +86,13 @@
 }
 }
 
+.displayPanel {
+  /* Styles for the display panel */
+  display: block;
+}
+
+.controlPanel {
+  /* Styles for the control panel */
+  display: block;
+}
+

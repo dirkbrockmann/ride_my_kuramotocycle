@@ -7,7 +7,7 @@
 
 
 export default {
-		dt:0.01,
+		dt:0.005,
 		L:1,
 		agentsize: [6,3],
 		omega_0: 1.0,
