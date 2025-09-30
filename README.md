@@ -8,7 +8,7 @@
 
 This explorable illustrates the Kuramoto model for phase coupled oscillators. This model is used to describe synchronization phenomena in natural systems, e.g. the flash synchronization of fire flies or wall-mounted clocks.
 
-The explorable is part of the [**Complexity Exporables Collection**](https://www.complexity-explorables.org). For more information about the system and its behavior consult the explorable
+The explorable is part of the [**Complexity Explorables Collection**](https://www.complexity-explorables.org). For more information about the system and its behavior consult the explorable
 > [**“Ride my Kuramotocycle!” - Synchronization of Phase-Coupled Oscillators - The Kuramoto Model**](https://www.complexity-explorables.org/explorables/ride-my-kuramotocycle)
 
 ## Usage & Installation
@@ -24,8 +24,11 @@ If you want to run a local copy without having to rely on the nasty internet, th
 is to install it via `npm`:
 
 ```shell
+mkdir ride_my_kuramotocycle
+cd ride_my_kuramotocycle
+npm init -y
 npm install @explorables/ride_my_kuramotocycle
-open node_modules/@explorables/ride_my_kuramotocycle/dist/index.html 
+npx http-server node_modules/@explorables/ride_my_kuramotocycle/dist/ 
 ```
 
 ### Embedding the explorable in your site
